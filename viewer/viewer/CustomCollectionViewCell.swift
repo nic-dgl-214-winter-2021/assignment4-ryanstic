@@ -17,7 +17,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     private let myImageVIew: UIImageView = {
         let imageView = UIImageView()
-//        imageView.image = UIImage(systemName: "house")
+//        imageView.image = UIImage(systemName: "house")//
         
         let images = [
         
@@ -40,7 +40,7 @@ class CustomCollectionViewCell: UICollectionViewCell {
         return imageView
     }()
     
-    private let myLabel: UILabel  = {
+    private let myLabel: UILabel  = {//
         let label = UILabel()
         label.text = "hello"
         label.textAlignment = .center
@@ -62,9 +62,9 @@ class CustomCollectionViewCell: UICollectionViewCell {
     override func layoutSubviews() {
         super.layoutSubviews()
         
-        myLabel.frame = CGRect(x: 5, y: 0, width: contentView.frame.size.width-10, height: 20)
+        myLabel.frame = CGRect(x: 5, y: 0, width: contentView.frame.size.width-10, height: 20)//
         
-        myImageVIew.frame = CGRect(x: 5, y: contentView.frame.size.height-80, width: contentView.frame.size.width-10, height: contentView.frame.size.width-10)
+        myImageVIew.frame = CGRect(x: 5, y: contentView.frame.size.height-80, width: contentView.frame.size.width-10, height: contentView.frame.size.width-10)//
     }
     
     public func configure(label:String) {

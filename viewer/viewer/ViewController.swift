@@ -16,11 +16,11 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         super.viewDidLoad()
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
-        layout.itemSize = CGSize(width: view.frame.size.width/3, height: view.frame.size.width/3)
+        layout.itemSize = CGSize(width: view.frame.size.width/3, height: view.frame.size.width/3) //
         collectionView = UICollectionView(frame: .zero, collectionViewLayout: layout)
         layout.minimumLineSpacing = 1
         layout.minimumInteritemSpacing = 1
-        layout.itemSize = CGSize(width: (view.frame.size.width/3)-4, height: (view.frame.size.width/3)-4)
+        layout.itemSize = CGSize(width: (view.frame.size.width/3)-4, height: (view.frame.size.width/3)-4) //
         
         guard let collectionView = collectionView else {
             return
@@ -33,12 +33,12 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
         view.addSubview(collectionView)
         collectionView.frame = view.bounds
         
-        // Do any additional setup after loading the view.
+        // Do any additional setup after loading the view.//
     }
 
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        return 10//
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
